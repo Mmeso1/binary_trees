@@ -29,7 +29,7 @@ void binary_tree_levelorder(const binary_tree_t *tree, void (*func)(int))
  */
 void process_level(const binary_tree_t *tree, void (*func)(int), int level)
 {
-	if (tree == NULL)
+	if (tree == NULL || func == NULL)
 		return;
 
 	if (level == 1)
